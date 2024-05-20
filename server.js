@@ -16,7 +16,9 @@ const _dirname=dirname(fileURLToPath(import.meta.url));
 //app.set("views", join(_dirname,'..','views'));
 app.set('view engine','ejs');
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ['https://roparoute.web.app/']
+}));
 //app.use(express.static(join(_dirname,'..','pages')));
 //app.use(express.static(join(_dirname,'..','css')));
 //app.use(express.static(join(_dirname,'..','js')));
