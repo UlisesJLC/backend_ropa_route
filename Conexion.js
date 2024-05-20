@@ -1,10 +1,10 @@
 import mysql from "mysql2";
 
 export const connection = mysql.createConnection({
-  host: "localhost",
+  host: "roundhouse.proxy.rlwy.net",
   user: "root",
-  password: "ULI20190",
-  database: "ropa__route"
+  password: "aozhMSJIJOoxpGOymAUOkUPvljsLFiFU",
+  database: "railway"
 });
 
 export function conectar(){
