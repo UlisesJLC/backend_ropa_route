@@ -4,7 +4,9 @@ export const connection = mysql.createConnection({
   host: "roundhouse.proxy.rlwy.net",
   user: "root",
   password: "aozhMSJIJOoxpGOymAUOkUPvljsLFiFU",
-  database: "railway"
+  database: "railway",
+  port: 19333,
+  connectTimeout: 20000
 });
 
 export function conectar(){
