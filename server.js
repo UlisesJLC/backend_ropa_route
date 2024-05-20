@@ -1,5 +1,5 @@
 import express from "express";
-import { initializeApp } from "firebase/app";
+
 import {getTiendas,crearUsuario,getUsuario,crearTienda,getTiendasVendedor,eliminarTienda, actualizarTienda,addFavorito,getFavorito,elimFavorito} from "./Consultas.js";
 import cors from "cors";
 import {dirname, join} from "path";
@@ -8,17 +8,8 @@ import{check, validationResult} from "express-validator";
 
 const app = express();
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCvv_7wlSM8_LKAaSsGOabgZYq7aHcgFDM",
-  authDomain: "roparoute.firebaseapp.com",
-  projectId: "roparoute",
-  storageBucket: "roparoute.appspot.com",
-  messagingSenderId: "858338286821",
-  appId: "1:858338286821:web:93988cd2468ffb3c26080c"
-};
 
 // Initialize Firebase
-const appFirebase = initializeApp(firebaseConfig);
 
 const _dirname=dirname(fileURLToPath(import.meta.url));
 
