@@ -154,5 +154,5 @@ app.post("/elimFavorito", (req, res)=>{
   });
 });
 
-app.listen(3000);
-console.log("server en el puerto 3000");
+app.listen(340);
+console.log("server en el puerto 340");
